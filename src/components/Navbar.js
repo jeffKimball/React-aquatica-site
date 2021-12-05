@@ -1,11 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import {FaBars, FaTimes} from 'react-icons/fa'
 import './NavbarStyles.css'
 
 const Navbar = () => {
+    const[click, setClick] = useState(false)
+    const handleClick = () => setClick(!click)
+
     return (
-        <div classname="header">
+        <div className="header">
             <Link to='/'><h1>Aquatica</h1></Link>
             <ul className="nav-menu">
                 <li>
