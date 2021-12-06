@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <div className="header">
             <Link to='/'><h1>Aquatica</h1></Link>
-            <ul className="nav-menu">
+            <ul className={click ? "nav-menu active" : "nav-menu"}>
                 <li>
                     <Link to='/'>Home</Link>
                 </li>
@@ -24,8 +24,9 @@ const Navbar = () => {
                     <Link to='/contact'>Contact</Link>
                 </li>
             </ul>
-            <div className="hamburger">
-                <FaBars size={20} style={{color: '#fff'}}/>
+            <div className="hamburger" onClick={handleClick}>
+            {click ? (<FaTimes size={20} style={{color: '#fff'}} />) : (<FaBars size={20} style={{color: '#fff'}} />)}
+                
             </div>
         </div>
     )
