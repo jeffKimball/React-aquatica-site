@@ -8,6 +8,10 @@
   padding: 1rem;
   z-index: 10;
 }
+.header-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
+}
 
 .nav-menu {
   display: flex;

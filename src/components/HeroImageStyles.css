@@ -26,10 +26,10 @@
 }
 
 .hero-img h1 {
-  background: rgba(97, 158, 255, 0.3);
-  padding: 5px 20px;
+  /* background: rgba(97, 158, 255, 0.3);
+  padding: 0 80px; */
   font-size: 2.4rem;
-  border-radius: 3px;
+  border-radius: 50%;
 }
 
 .hero-img p {

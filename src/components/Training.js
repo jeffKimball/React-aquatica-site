@@ -3,7 +3,6 @@ import './TrainingStyles.css'
 
 import {Link} from 'react-router-dom'
 
-import Diver from '../assets/diver.jpg'
 import Coral from '../assets/coral.jpg'
 
 const Training = () => {
